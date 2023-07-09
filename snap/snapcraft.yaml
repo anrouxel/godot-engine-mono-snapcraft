@@ -1,8 +1,8 @@
 name: gd-godot-engine-mono-snapcraft
 license: MIT
-summary: Godot Engine
+summary: Godot Engine C#
 description: |
-  Godot Engine
+  Godot Engine C#
 base: core22
 grade: stable
 confinement: strict
