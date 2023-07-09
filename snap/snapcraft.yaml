@@ -1,4 +1,4 @@
-name: gd-godot-engine-snapcraft
+name: gd-godot-engine-mono-snapcraft
 license: MIT
 summary: Godot Engine
 description: |
@@ -7,7 +7,7 @@ base: core22
 grade: stable
 confinement: strict
 
-adopt-info: gd-godot-engine-snapcraft
+adopt-info: gd-godot-engine-mono-snapcraft
 
 architectures:
   - build-on: amd64
@@ -30,7 +30,7 @@ layout:
     bind-file: $SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/libvulkan_radeon.so
 
 apps:
-  gd-godot-engine-snapcraft:
+  gd-godot-engine-mono-snapcraft:
     extensions: [gnome]
     command: godot-engine/godot-engine
     environment:
@@ -46,7 +46,7 @@ apps:
       - hardware-observe
 
 parts:
-  gd-godot-engine-snapcraft:
+  gd-godot-engine-mono-snapcraft:
     plugin: nil
     source: https://github.com/godotengine/godot.git
     source-type: git
